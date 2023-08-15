@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* All */
+.all {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 80px;
+    text-align: center;
+}
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.tag {
+    font-size: 14px;
+    width: 80%;
+}
+.btn {
+    padding: 8px 15px; 
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: aqua;
+    color: #000;
+} 
+/* All */
+
+
+/* Secret */
+.secret {
+    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8));
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+.title2 {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+}
+.btns {
+    display: flex;
+    column-gap: 20px;
+}
+.sb-btn {
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    color: #000;
+    cursor: pointer;
+}
+.yes:hover {
+    background: linear-gradient(rgba(28, 177, 14, 0.4), rgba(32, 187, 18, 0.4));
+}
+.no:hover {
+    background: linear-gradient(rgba(228, 6, 6, 0.4), rgba(221, 13, 13, 0.4));
+}
+/* Secret */
+
+
+/* Secret Show Js*/
+.secret-show {
+    display: flex;
+    animation: show1 0.3s linear;
+}
+
+.secret-show .box {
+    animation: show2 0.3s linear;
+}
+/* Secret Show Js*/
+
+/* Secret Animation*/
+@keyframes show1 {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes show2 {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+}
+/* Secret Animation*/
+
+
+/* Secret Hide Js*/
+.secret-hide {
+    display: flex;
+    animation: hide1 0.3s linear;
+}
+
+.secret-hide .box {
+    animation: hide2 0.3s linear;
+}
+/* Secret Hide Js*/
+
+/* Secret Animation*/
+@keyframes hide1 {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hide2 {
+    100% {
+        opacity: 0;
+        scale: 0;
+    }
+}
+/* Secret Animation*/
